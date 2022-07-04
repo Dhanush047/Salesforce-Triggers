@@ -19,3 +19,25 @@ trigger contrigger on Contact (before insert)
 }
 
 ========================================================================
+
+APEX CLASS TO CREATE 20 CONTACTS
+
+========================================================================
+
+public class con 
+{
+    public static void con1()
+    {
+        List<Contact> conlist = new List<Contact>();
+        for(Integer i=1;i<=20;i++)
+        {
+            Contact c = new Contact();
+            c.LastName = 'Shinchan' + i;
+            conlist.add(c);            
+        }
+        insert conlist;
+    }
+
+}
+
+========================================================================

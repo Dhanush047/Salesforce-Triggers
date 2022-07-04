@@ -1,6 +1,7 @@
 SALESFORCE APEX TRIGGERS BEFORE INSERT
 
 ========================================================================
+TRIGGER IN CONTACT OBJECT
 
 trigger contrigger on Contact (before insert) 
 {

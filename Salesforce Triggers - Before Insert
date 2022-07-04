@@ -1,4 +1,5 @@
 SALESFORCE APEX TRIGGERS BEFORE INSERT
+
 ========================================================================
 
 trigger contrigger on Contact (before insert) 
@@ -15,3 +16,5 @@ trigger contrigger on Contact (before insert)
     system.debug(Trigger.new[0]);
     
 }
+
+========================================================================

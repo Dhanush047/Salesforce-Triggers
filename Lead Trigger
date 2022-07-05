@@ -1,0 +1,32 @@
+LEAD TRIGGER
+=====================================================================
+LEAD CLASS
+=====================================================================
+public class LeadHandler1 
+{
+    public static void leadtrigger(List<Lead> led)
+    {
+        for(Lead l : led)
+        {
+            if(l.LeadSource == 'Web')
+            {
+                l.Rating = 'Cold';
+            }
+            else
+            {
+                l.Rating = 'Hot';
+            }
+        }
+    }
+}
+=====================================================================
+LEAD TRIGGER
+=====================================================================
+trigger LeadTrigger2 on Lead (before insert)
+{
+    if(Trigger.isinsert)
+    {
+        LeadHandler1.leadtrigger(Trigger.new);
+    }
+}
+=====================================================================

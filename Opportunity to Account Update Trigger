@@ -1,0 +1,36 @@
+OPPORTUNITY TO ACCOUNT UPDATE TRIGGER
+================================================================
+OPPORTUNITY CLASS
+================================================================
+public class Opportunity_Class_Trigger 
+{
+    public static void Opportunityclass(List<Opportunity> opp)
+    {
+        List<Account> aclist = new List<Account>();
+        for(Opportunity o : opp)
+        {
+            Account ac = new Account();
+            if(o.StageName == 'Closed Won')
+            {
+               ac.Rating = 'Hot';
+               ac.Id = o.AccountId;
+               aclist.add(ac);
+            }
+        }
+        update aclist;
+        
+    }
+
+}
+================================================================
+OPPORTUNITY TRIGGER
+================================================================
+trigger Opportunity_to_Account on Opportunity (after update) 
+{
+    if(Trigger.isupdate)
+    {
+        Opportunity_Class_Trigger.Opportunityclass(Trigger.new);
+    }
+
+}
+================================================================

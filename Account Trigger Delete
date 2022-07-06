@@ -11,3 +11,7 @@ public class AccDeleteTrigger
         }
         List<Contact> con = [SELECT name,id FROM Contact WHERE AccountID IN : accid];
         Integer consize = con.size();
+        for(Account ac : accmap.values())
+        {
+            if(consize >= 2)
+            {

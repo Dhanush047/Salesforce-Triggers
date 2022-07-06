@@ -1,5 +1,7 @@
 SALESFORCE ACCOUNT TRIGGER DELETE IF CONTACT IS LESS THAN TWO
 =========================================================================================
+CLASS HANDLER CONTAINS LOGIC
+=========================================================================================
 
 public class AccDeleteTrigger 
 {

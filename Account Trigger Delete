@@ -17,3 +17,7 @@ public class AccDeleteTrigger
             {
                 ac.addError('Account cannot be deleted');
             }
+        }
+    }
+    
+}

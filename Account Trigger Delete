@@ -1,2 +1,11 @@
 SALESFORCE ACCOUNT TRIGGER DELETE IF CONTACT IS LESS THAN TWO
 ===========================================================================
+public class AccDeleteTrigger 
+{
+    public static void Deleterecord(Map<Id,Account> accmap)
+    {
+        set<Id> accid = new set<Id>();
+        for(Account a : accmap.values())
+        {
+            accid.add(a.id);
+        }

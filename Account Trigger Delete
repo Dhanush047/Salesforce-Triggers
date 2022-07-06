@@ -15,3 +15,5 @@ public class AccDeleteTrigger
         {
             if(consize >= 2)
             {
+                ac.addError('Account cannot be deleted');
+            }

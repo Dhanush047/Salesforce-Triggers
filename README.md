@@ -15,4 +15,12 @@
 <H3> TYPES OF TRIGGER
         <H4> -> BEFORE TRIGGER
         <H4> -> AFTER TRIGGER
-         
+                 
+<H3> TRIGGER EVENTS
+        <H4> -> BEFORE INSERT
+         <H4> -> BEFORE UPDATE
+                  <H4> -> BEFORE DELETE
+                           <H4> -> AFTER INSERT
+                                    <H4> -> AFTER UPDATE
+                                             <H4> -> AFTER DELETE
+                                                      <H4> -> AFTER UNDELETE

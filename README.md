@@ -18,9 +18,9 @@
                  
 <H3> TRIGGER EVENTS
         <H4> -> BEFORE INSERT
-         <H4> -> BEFORE UPDATE
-                  <H4> -> BEFORE DELETE
-                           <H4> -> AFTER INSERT
-                                    <H4> -> AFTER UPDATE
-                                             <H4> -> AFTER DELETE
-                                                      <H4> -> AFTER UNDELETE
+        <H4> -> BEFORE UPDATE
+        <H4> -> BEFORE DELETE
+        <H4> -> AFTER INSERT
+        <H4> -> AFTER UPDATE
+        <H4> -> AFTER DELETE
+        <H4> -> AFTER UNDELETE

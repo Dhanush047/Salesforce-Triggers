@@ -17,6 +17,8 @@
         <H4> -> AFTER TRIGGER
                  
 <H3> TRIGGER EVENTS
+         THERE ARE SEVEN TRIGGER EVENTS THEY ARE:
+         
         <H4> -> BEFORE INSERT
         <H4> -> BEFORE UPDATE
         <H4> -> BEFORE DELETE
